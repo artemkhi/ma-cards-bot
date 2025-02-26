@@ -32,7 +32,7 @@ async function subscribeMessage(chatID) {
                 [
                     {
                         text: 'Подписаться на канал',
-                        url: 'https://t.me/psychologist_Marina_Chernova',
+                        url: '@psychologist_Marina_Chernova',
                     },
                 ],
             ],
@@ -67,7 +67,7 @@ async function pullCard(chatID) {
 bot.on('message', async function (message) {
     const chatID = message.chat.id;
     const text = message.text;
-    const chatMember = await bot.getChatMember('@Chernova_Marina_psychologist', chatID);
+    const chatMember = await bot.getChatMember('@psychologist_Marina_Chernova', chatID);
     const isSubscribed = chatMember.status !== 'left' && chatMember.status !== 'kicked';
 
     try {
@@ -121,7 +121,7 @@ bot.on('message', async function (message) {
 bot.on('callback_query', async function (message) {
     const chatID = message.message.chat.id;
     const data = message.data;
-    const chatMember = await bot.getChatMember('@Chernova_Marina_psychologist', chatID);
+    const chatMember = await bot.getChatMember('https://t.me/psychologist_Marina_Chernova', chatID);
     const isSubscribed = chatMember.status !== 'left' && chatMember.status !== 'kicked';
 
     try {
