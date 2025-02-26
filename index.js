@@ -32,7 +32,7 @@ async function subscribeMessage(chatID) {
                 [
                     {
                         text: 'Подписаться на канал',
-                        url: '@psychologist_Marina_Chernova',
+                        url: 'https://t.me/psychologist_Marina_Chernova',
                     },
                 ],
             ],
